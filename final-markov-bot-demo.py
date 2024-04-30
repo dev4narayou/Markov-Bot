@@ -91,4 +91,5 @@ async def update_markov_training(channel: TextChannel):
     markov_models[channel.id] = markovify.NewlineText(channel_messages[channel.id])
 
 if __name__ == "__main__":
+    print('testing')
     client.run(DISCORD_TOKEN)
