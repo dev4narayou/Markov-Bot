@@ -89,4 +89,5 @@ async def update_markov_training(channel: TextChannel):
     print('finished markov training')
 
 if __name__ == "__main__":
+    print('testing')
     client.run(DISCORD_TOKEN)
