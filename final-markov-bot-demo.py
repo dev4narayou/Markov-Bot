@@ -23,9 +23,6 @@ async def hello(ctx):
     await ctx.send("hello")
 
 
-@client.command()
-async def backshots(ctx):
-    await ctx.send("https://tenor.com/view/anime-gif-7279870884587886608")
 
 
 @client.command()
@@ -89,6 +86,7 @@ async def update_markov_training(channel: TextChannel):
 
     # create new markov model (note .NewlineText not .Text)
     markov_models[channel.id] = markovify.NewlineText(channel_messages[channel.id])
+    print('finished markov training')
 
 if __name__ == "__main__":
     client.run(DISCORD_TOKEN)
