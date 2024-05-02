@@ -24,7 +24,6 @@ async def hello(ctx):
 
 
 
-
 @client.command()
 async def hollowpurple(ctx):
     await ctx.send("https://tenor.com/view/jujutsu-kaisen-second-season-satoru-gojo-purple-hollow-purple-gif-15126148765882407056")
